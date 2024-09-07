@@ -1,0 +1,54 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  color: rgb(92 227 227);
+  background-image: linear-gradient(66deg, #3a2c43d9, #2a3b3be3, #060506);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.btnContainer {
+  display: flex;
+  gap: 2em;
+}
+button {
+  padding: 0.7rem;
+  margin: 2rem;
+  background: #27fcf1a6;
+  font-size: 0.8em;
+  border-radius: 0.4em;
+  color: #730e53;
+}
+
+.resultPopup {
+  width: 100vw;
+  height: 100vh;
+  color: rgb(92 227 227);
+  background: #000;
+  background-image: linear-gradient(66deg, #c72354d9, #2a3b3be3, #060506);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+}
+
+/* responsive */
+
+@media screen and (max-width: 480px) {
+  .btnContainer {
+    font-size: 0.5em;
+    gap: 2em;
+  }
+  button {
+    margin: 0;
+  }
+}
